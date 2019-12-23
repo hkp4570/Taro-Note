@@ -1,5 +1,5 @@
 import Taro, { Component } from '@tarojs/taro'
-import Index from './pages/index'
+import About from './pages/about/about'
 
 import './app.less'
 
@@ -13,15 +13,45 @@ class App extends Component {
 
   config = {
     pages: [
-      'pages/index/index'
+      'pages/index/index',
+      'pages/about/about'
     ],
     window: {
-      backgroundTextStyle: 'light',
+      backgroundTextStyle: 'dark',
       navigationBarBackgroundColor: '#fff',
-      navigationBarTitleText: 'WeChat',
-      navigationBarTextStyle: 'black'
-    }
-  }
+      navigationBarTitleText: 'Taro操作',
+      navigationBarTextStyle: 'black',
+      enablePullDownRefresh:true,
+    },
+    tabBar:{
+      borderStyle:'black',
+      list:[
+        {
+          pagePath:'pages/index/index',
+          text:'首页',
+          iconPath:'./assets/images/icon_1.png',
+          selectedIconPath:'./assets/images/icon_11.png'
+        },
+        {
+          pagePath:'pages/about/about',
+          text:'关于',
+          iconPath:'./assets/images/icon_2.png',
+          selectedIconPath:'./assets/images/icon_22.png'
+        }
+      ]
+    },
+    debug:true,
+    networkTimeout:{
+      request:10000,
+      uploadFile:10000
+    },
+    permission:{
+      'scope.userLocation':{
+        desc:'你的位置信息将用于小程序位置接口的效果展示'
+      }
+    },
+    requiredBackgroundModes: ['audio']
+  };
 
   componentDidMount () {}
 
@@ -35,7 +65,7 @@ class App extends Component {
   // 请勿修改此函数
   render () {
     return (
-      <Index />
+      <About />
     )
   }
 }
