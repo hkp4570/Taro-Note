@@ -40,7 +40,7 @@ class App extends Component {
         }
       ]
     },
-    debug:true,
+    debug:false,
     networkTimeout:{
       request:10000,
       uploadFile:10000
@@ -51,6 +51,13 @@ class App extends Component {
       }
     },
     requiredBackgroundModes: ['audio']
+  };
+
+  globalData={
+    loginType:'tom',
+    userInfo:{
+      age:18
+    }
   };
 
   componentDidMount () {}
