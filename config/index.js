@@ -1,3 +1,4 @@
+const path = require('path');
 const config = {
   projectName: 'myTaro',
   date: '2019-12-20',
@@ -23,6 +24,9 @@ const config = {
     ]
   },
   plugins: [],
+  alias:{
+    "~":path.resolve(__dirname,'..','src')
+  },
   defineConstants: {
   },
   mini: {
