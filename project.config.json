@@ -2,7 +2,7 @@
 	"miniprogramRoot": "dist/",
 	"projectname": "myTaro",
 	"description": "",
-	"appid": "touristappid",
+	"appid": "wxa3ef6884c5c237ba",
 	"setting": {
 		"urlCheck": true,
 		"es6": false,

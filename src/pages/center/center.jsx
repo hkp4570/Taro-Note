@@ -1,5 +1,5 @@
 import Taro, { PureComponent } from '@tarojs/taro';
-import { View } from '@tarojs/components';
+import { View, Navigator } from '@tarojs/components';
 
 export default class Center extends PureComponent{
   config = {
@@ -12,7 +12,9 @@ export default class Center extends PureComponent{
 
   render() {
     return(
-      <View>center</View>
+      <View>
+        <Navigator target='self' open-type='navigateBack' delta='2'>回退</Navigator>
+      </View>
     )
   }
 }

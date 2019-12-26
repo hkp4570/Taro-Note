@@ -13,17 +13,23 @@ class App extends Component {
 
   config = {
     pages: [
+      'pages/cameraControl/cameraControl',
+      'pages/videoControl/videoControl',
+      'pages/imageControl/imageControl',
+      'pages/navigator/navigator',
+      'pages/formComp/formComp',
+      'pages/basicControl/basicControl',
+      'pages/home/home',
       'pages/index/index',
       'pages/about/about',
       'pages/center/center',
-      'pages/stylePage/stylePage',
+      'pages/stylePage/stylePage'
     ],
     window: {
       backgroundTextStyle: 'dark',
       navigationBarBackgroundColor: '#fff',
       navigationBarTitleText: 'Taro操作',
       navigationBarTextStyle: 'black',
-      enablePullDownRefresh:true,
     },
     tabBar:{
       borderStyle:'black',
