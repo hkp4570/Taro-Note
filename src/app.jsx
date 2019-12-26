@@ -13,6 +13,7 @@ class App extends Component {
 
   config = {
     pages: [
+      'pages/mapControl/mapControl',
       'pages/cameraControl/cameraControl',
       'pages/videoControl/videoControl',
       'pages/imageControl/imageControl',

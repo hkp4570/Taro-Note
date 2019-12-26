@@ -1,6 +1,6 @@
 import Taro, { Component } from '@tarojs/taro';
 import { View,Text,Button } from '@tarojs/components';
-import Clock from '../../components/Colck';
+import Clock from '../../components/Clock/index'
 
 export default class About extends Component{
   config = {
