@@ -13,6 +13,13 @@ class App extends Component {
 
   config = {
     pages: [
+      'pages/deviceDirection/deviceDirection',
+      'pages/myRef/myRef',
+      'pages/refControl/refControl',
+      'pages/renderPropsControl/renderPropsControl',
+      'pages/childrenControl/childrenControl',
+      'pages/functionControl/functionControl',
+      'pages/openDataControl/openDataControl',
       'pages/mapControl/mapControl',
       'pages/cameraControl/cameraControl',
       'pages/videoControl/videoControl',
