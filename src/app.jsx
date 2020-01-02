@@ -13,6 +13,13 @@ class App extends Component {
 
   config = {
     pages: [
+      'pages/userCaptureScreen/userCaptureScreen',
+      'pages/scanCode/scanCode',
+      'pages/scanCode/createScan',
+      'pages/addPhoneContact/addPhoneContact',
+      'pages/compass/compass',
+      'pages/keepScreenOn/keepScreenOn',
+      'pages/clipboard/clipboard',
       'pages/deviceDirection/deviceDirection',
       'pages/myRef/myRef',
       'pages/refControl/refControl',
