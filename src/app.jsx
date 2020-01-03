@@ -13,6 +13,7 @@ class App extends Component {
 
   config = {
     pages: [
+      'pages/systemInfo/systemInfo',
       'pages/userCaptureScreen/userCaptureScreen',
       'pages/scanCode/scanCode',
       'pages/scanCode/createScan',
@@ -46,54 +47,54 @@ class App extends Component {
       navigationBarTitleText: 'Taro操作',
       navigationBarTextStyle: 'black',
     },
-    tabBar:{
-      borderStyle:'black',
-      list:[
+    tabBar: {
+      borderStyle: 'black',
+      list: [
         {
-          pagePath:'pages/index/index',
-          text:'首页',
-          iconPath:'./assets/images/icon_1.png',
-          selectedIconPath:'./assets/images/icon_11.png'
+          pagePath: 'pages/index/index',
+          text: '首页',
+          iconPath: './assets/images/icon_1.png',
+          selectedIconPath: './assets/images/icon_11.png'
         },
         {
-          pagePath:'pages/about/about',
-          text:'关于',
-          iconPath:'./assets/images/icon_2.png',
-          selectedIconPath:'./assets/images/icon_22.png'
+          pagePath: 'pages/about/about',
+          text: '关于',
+          iconPath: './assets/images/icon_2.png',
+          selectedIconPath: './assets/images/icon_22.png'
         }
       ]
     },
-    debug:false,
-    networkTimeout:{
-      request:10000,
-      uploadFile:10000
+    debug: false,
+    networkTimeout: {
+      request: 10000,
+      uploadFile: 10000
     },
-    permission:{
-      'scope.userLocation':{
-        desc:'你的位置信息将用于小程序位置接口的效果展示'
+    permission: {
+      'scope.userLocation': {
+        desc: '你的位置信息将用于小程序位置接口的效果展示'
       }
     },
     requiredBackgroundModes: ['audio']
   };
 
-  globalData={
-    loginType:'tom',
-    userInfo:{
-      age:18
+  globalData = {
+    loginType: 'tom',
+    userInfo: {
+      age: 18
     }
   };
 
-  componentDidMount () {}
+  componentDidMount() { }
 
-  componentDidShow () {}
+  componentDidShow() { }
 
-  componentDidHide () {}
+  componentDidHide() { }
 
-  componentDidCatchError () {}
+  componentDidCatchError() { }
 
   // 在 App 类中的 render() 函数没有实际作用
   // 请勿修改此函数
-  render () {
+  render() {
     return (
       <About />
     )
