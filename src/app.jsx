@@ -13,6 +13,8 @@ class App extends Component {
 
   config = {
     pages: [
+      'pages/app/app',
+      'pages/file/file',
       'pages/systemInfo/systemInfo',
       'pages/userCaptureScreen/userCaptureScreen',
       'pages/scanCode/scanCode',
