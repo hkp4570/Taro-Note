@@ -21,6 +21,9 @@ export default class extends Component {
 				<Navigator target='self' open-type='navigate' url='/pages/scanCode/scanCode' >微信扫码</Navigator>
 				<Navigator target='self' open-type='navigate' url='/pages/systemInfo/systemInfo' >系统信息</Navigator>
 				<Navigator target='self' open-type='navigate' url='/pages/userCaptureScreen/userCaptureScreen' >截屏、振动、打电话</Navigator>
+        <Navigator target='self' open-type='navigate' url='/pages/animation/animation' >动画</Navigator>
+        <Navigator target='self' open-type='navigate' url='/pages/interactive/interactive' >交互</Navigator>
+        <Navigator target='self' open-type='navigate' url='/pages/nav/nav1' >导航</Navigator>
 
 				<View>taro 组件库</View>
 				<Navigator target='self' open-type='navigate' url='/pages/basicControl/basicControl' >图标、进度条、富文本</Navigator>
