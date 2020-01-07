@@ -12,6 +12,7 @@ import './app.less'
 class App extends Component {
   config = {
     pages: [
+      'pages/record/record',
       'pages/controlKey/controlKey',
       'pages/refresh/refresh3',
       'pages/refresh/refresh2',

@@ -26,6 +26,7 @@ export default class extends Component {
         		<Navigator target='self' open-type='navigate' url='/pages/nav/nav1' >导航</Navigator>
 				<Navigator target='self' open-type='navigate' url='/pages/refresh/refresh1' >刷新操作</Navigator>
 				<Navigator target='self' open-type='navigate' url='/pages/controlKey/controlKey' >刷新操作</Navigator>
+				<Navigator target='self' open-type='navigate' url='/pages/record/record' >录音</Navigator>
 
 				<View>taro 组件库</View>
 				<Navigator target='self' open-type='navigate' url='/pages/basicControl/basicControl' >图标、进度条、富文本</Navigator>
