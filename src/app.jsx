@@ -10,16 +10,15 @@ import './app.less'
 // }
 
 class App extends Component {
-
   config = {
     pages: [
+      'pages/controlKey/controlKey',
+      'pages/refresh/refresh3',
       'pages/refresh/refresh2',
       'pages/refresh/refresh1',
-      'pages/refresh/refresh3',
       'pages/nav/nav1',
       'pages/nav/nav2',
       'pages/nav/nav3',
-      'pages/nav/nav4',
       'pages/interactive/interactive',
       'pages/animation/animation',
       'pages/app/app',
