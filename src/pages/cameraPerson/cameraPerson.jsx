@@ -1,5 +1,8 @@
 import Taro, { Component } from '@tarojs/taro';
 import { View, Camera,CoverView,CoverImage } from '@tarojs/components';
+import hd from '../../assets/images/hd.png';
+import rx from '../../assets/images/rx.png';
+import './cameraPerson.less';
 
 export default class extends Component{
  config={
@@ -50,8 +53,8 @@ export default class extends Component{
     return(
       <Camera className='camera-cls' devicePosition='back'>
         <CoverView className='main-tiips'>对准人形</CoverView>
-        <CoverImage className='verifycode-cover' src='../../assets/images/rx.png' />
-        <CoverImage onClick={this.photograph} className='red-point' src='../../assets/images/hd.png' />
+        <CoverImage className='verifycode-cover' src={rx} />
+        <CoverImage onClick={this.photograph} className='red-point' src={hd} />
       </Camera>
     )
   }
