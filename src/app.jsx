@@ -12,6 +12,11 @@ import './app.less'
 class App extends Component {
   config = {
     pages: [
+      'pages/cameraPerson/cameraPerson',
+      'pages/cameraPerson/takePhoto',
+      'pages/cameraPerson/showPhoto',
+      'pages/font/font',
+      'pages/playMusic/playMusic',
       'pages/record/record',
       'pages/controlKey/controlKey',
       'pages/refresh/refresh3',
