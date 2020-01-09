@@ -1,5 +1,8 @@
-import Taro, { Component } from '@tarojs/taro'
-import About from './pages/about/about'
+import Taro, { Component } from '@tarojs/taro';
+import { Provider } from '@tarojs/redux';
+import '@tarojs/async-await';
+import models from './models';
+import dva from './dva';
 
 import './app.less'
 
@@ -9,9 +12,22 @@ import './app.less'
 //   require('nerv-devtools')
 // }
 
+const dvaApp = dva.createApp({
+  initialState:{},
+  models:models,
+  onError(e,dispatch){
+    //dispatch(action("sys/error", e));
+  }
+});
+const store = dvaApp.getStore();
+
+
 class App extends Component {
+  dispatch = dvaApp.dispatch;
   config = {
     pages: [
+      'pages/scrollTop/scrollTop2',
+      'pages/imageNews/imageNews',
       'pages/cameraPerson/cameraPerson',
       'pages/cameraPerson/takePhoto',
       'pages/cameraPerson/showPhoto',
@@ -100,7 +116,19 @@ class App extends Component {
     }
   };
 
-  componentDidMount() { }
+  componentDidMount() {
+    Taro.onPageNotFound(res => {
+      Taro.showToast({
+        title:'访问的页面不存在，即将进入首页',
+        icon:'none',
+        success(){
+          setTimeout(() => {
+            Taro.switchTab({url:'pages/home'})
+          },1000)
+        }
+      })
+    })
+  }
 
   componentDidShow() { }
 
@@ -112,7 +140,7 @@ class App extends Component {
   // 请勿修改此函数
   render() {
     return (
-      <About />
+      <Provider store={store} />
     )
   }
 }

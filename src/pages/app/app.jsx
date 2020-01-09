@@ -30,6 +30,7 @@ export default class extends Component {
         <Navigator target='self' open-type='navigate' url='/pages/playMusic/playMusic' >背景音频控制</Navigator>
         <Navigator target='self' open-type='navigate' url='/pages/font/font' >加载新字体</Navigator>
         <Navigator target='self' open-type='navigate' url='/pages/cameraPerson/cameraPerson' >人形拍照</Navigator>
+        <Navigator target='self' open-type='navigate' url='/pages/scrollTop/scrollTop1' >滚动API回到最上</Navigator>
 
 				<View>taro 组件库</View>
 				<Navigator target='self' open-type='navigate' url='/pages/basicControl/basicControl' >图标、进度条、富文本</Navigator>

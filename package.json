@@ -29,8 +29,11 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@tarojs/async-await": "^2.0.0",
     "@tarojs/components": "2.0.0-beta.10",
     "@tarojs/components-qa": "2.0.0-beta.10",
+    "@tarojs/redux": "^2.0.0",
+    "@tarojs/redux-h5": "^2.0.0",
     "@tarojs/router": "2.0.0-beta.10",
     "@tarojs/taro": "2.0.0-beta.10",
     "@tarojs/taro-alipay": "2.0.0-beta.10",
@@ -41,9 +44,13 @@
     "@tarojs/taro-swan": "2.0.0-beta.10",
     "@tarojs/taro-tt": "2.0.0-beta.10",
     "@tarojs/taro-weapp": "2.0.0-beta.10",
+    "dva-core": "^2.0.2",
     "moment": "^2.24.0",
     "nerv-devtools": "^1.5.5",
-    "nervjs": "^1.5.5"
+    "nervjs": "^1.5.5",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "@tarojs/mini-runner": "2.0.0-beta.10",

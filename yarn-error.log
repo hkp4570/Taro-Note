@@ -1,20 +1,20 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\hkp\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
+  D:\node\node.exe C:\Users\asus\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add redux
 
 PATH: 
-  D:\workspace\myTaro\node_modules\.bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\hkp\AppData\Roaming\npm\node_modules\yarn\bin;C:\Program Files\nodejs\;D:\development\git\Git\cmd;D:\development\TortoiseGit\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Users\hkp\AppData\Roaming\npm;C:\Users\hkp\AppData\Local\Yarn\Data\global\node_modules\.bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;D:\development\visual studio code\Microsoft VS Code\bin
+  D:\webs\myTaro\node_modules\.bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\git\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\node\;D:\vscode\Microsoft VS Code\;D:\JDK\bin;C:\Users\asus\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\Redis\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\asus\AppData\Roaming\npm;D:\vscode\Microsoft VS Code\bin;;D:\webstorm\WebStorm 2019.2.3\bin;
 
 Yarn version: 
-  1.21.1
+  1.17.3
 
 Node version: 
-  12.13.1
+  10.16.2
 
 Platform: 
   win32 x64
 
 Trace: 
-  Error: EPERM: operation not permitted, unlink 'D:\workspace\myTaro\node_modules\less-loader\dist'
+  Error: EPERM: operation not permitted, unlink 'D:\webs\myTaro\node_modules\babel-preset-env\node_modules\.bin'
 
 npm manifest: 
   {
