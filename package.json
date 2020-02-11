@@ -29,7 +29,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@tarojs/async-await": "^2.0.0",
     "@tarojs/components": "2.0.0-beta.10",
     "@tarojs/components-qa": "2.0.0-beta.10",
     "@tarojs/redux": "^2.0.0",
@@ -53,6 +52,7 @@
     "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
+    "@tarojs/async-await": "^2.0.0",
     "@tarojs/mini-runner": "2.0.0-beta.10",
     "@tarojs/plugin-babel": "^2.0.0-beta.10",
     "@tarojs/plugin-less": "^2.0.0-beta.10",
@@ -71,6 +71,7 @@
     "eslint-plugin-react": "^7.8.2",
     "eslint-plugin-react-hooks": "^1.6.1",
     "eslint-plugin-taro": "2.0.0-beta.10",
+    "regenerator": "^0.13.1",
     "stylelint": "9.3.0",
     "stylelint-config-taro-rn": "2.0.0-beta.10",
     "stylelint-taro-rn": "2.0.0-beta.10"

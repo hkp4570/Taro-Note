@@ -1,7 +1,7 @@
 import Taro, { Component } from '@tarojs/taro';
 import { Provider } from '@tarojs/redux';
 import '@tarojs/async-await';
-import models from './models';
+import models from './models/index';
 import dva from './dva';
 
 import './app.less'
@@ -26,6 +26,8 @@ class App extends Component {
   dispatch = dvaApp.dispatch;
   config = {
     pages: [
+      'pages/canvasDemo/canvasDemo',
+      'pages/app/app',
       'pages/scrollTop/scrollTop2',
       'pages/imageNews/imageNews',
       'pages/cameraPerson/cameraPerson',
@@ -43,7 +45,6 @@ class App extends Component {
       'pages/nav/nav3',
       'pages/interactive/interactive',
       'pages/animation/animation',
-      'pages/app/app',
       'pages/file/file',
       'pages/systemInfo/systemInfo',
       'pages/userCaptureScreen/userCaptureScreen',

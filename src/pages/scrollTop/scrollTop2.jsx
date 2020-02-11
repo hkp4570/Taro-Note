@@ -1,6 +1,8 @@
 import Taro, { Component } from '@tarojs/taro';
 import { View, ScrollView } from '@tarojs/components';
 import './scrollTop2.less';
+
+
 export default class  extends Component{
  config={
 
@@ -14,6 +16,7 @@ export default class  extends Component{
   };
 
   componentWillMount() {
+
   };
 
   componentDidMount() {
