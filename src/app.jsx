@@ -21,13 +21,19 @@ const dvaApp = dva.createApp({
 });
 const store = dvaApp.getStore();
 
+//初始化云数据
+Taro.cloud.init({
+  env:'test-5f3x2'
+})
+
 
 class App extends Component {
   dispatch = dvaApp.dispatch;
   config = {
     pages: [
-      'pages/canvasDemo/canvasDemo',
+      'pages/cloudDemo/cloudDemo',
       'pages/app/app',
+      'pages/canvasDemo/canvasDemo',
       'pages/scrollTop/scrollTop2',
       'pages/imageNews/imageNews',
       'pages/cameraPerson/cameraPerson',
