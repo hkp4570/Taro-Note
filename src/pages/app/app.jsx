@@ -45,7 +45,10 @@ export default class extends Component {
 				<Navigator target='self' open-type='navigate' url='/pages/openDataControl/openDataControl' >开放能力-获取用户信息</Navigator>
 				<Navigator target='self' open-type='navigate' url='/pages/refControl/refControl' >使用ref</Navigator>
 				<Navigator target='self' open-type='navigate' url='/pages/canvasDemo/canvasDemo' >涂鸦板</Navigator>
-				<Navigator target='self' open-type='navigate' url='/pages/cloudDemo/cloudDemo' >云操作</Navigator>
+				<Navigator target='self' open-type='navigate' url='/pages/kuaidi/kuaidi'>快递查询</Navigator>
+				<View>云开发</View>
+				<Navigator target='self' open-type='navigate' url='/pages/cloudDemo/cloudDemo' >云基础操作</Navigator>
+				<Navigator target='self' open-type='navigate' url='/pages/cloudTV/home' >电视云操作</Navigator>
 			</View>
 		)
 	}

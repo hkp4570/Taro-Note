@@ -31,6 +31,9 @@ class App extends Component {
   dispatch = dvaApp.dispatch;
   config = {
     pages: [
+      'pages/kuaidi/kuaidi',
+      'pages/cloudTV/home',
+      'pages/cloudTV/channelList',
       'pages/cloudDemo/cloudDemo',
       'pages/app/app',
       'pages/canvasDemo/canvasDemo',
