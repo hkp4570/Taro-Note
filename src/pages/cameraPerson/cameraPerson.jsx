@@ -1,17 +1,17 @@
 import Taro, { Component } from '@tarojs/taro';
-import { View, Camera,CoverView,CoverImage } from '@tarojs/components';
+import { View, Camera, CoverView, CoverImage } from '@tarojs/components';
 import hd from '../../assets/images/hd.png';
 import rx from '../../assets/images/rx.png';
 import './cameraPerson.less';
 
-export default class extends Component{
- config={
-    navigationBarTitleText:'人形拍照'
+export default class extends Component {
+  config = {
+    navigationBarTitleText: '人形拍照'
   };
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
-      src:''
+      src: ''
     }
   };
 
@@ -25,23 +25,23 @@ export default class extends Component{
   };
 
   //拍照
-  photograph(){
+  photograph() {
     let that = this;
     const ctx = Taro.createCameraContext();
     ctx.takePhoto({
-      quality:'high',
-      success(res){
+      quality: 'high',
+      success(res) {
         that.setState({
-          src:res.tempImagePath
-        },() => {
+          src: res.tempImagePath
+        }, () => {
           //拍照完成后数据存储
           Taro.setStorage({
-            key:'photoPeople',
-            data:res.tempImagePath
+            key: 'photoPeople',
+            data: res.tempImagePath
           })
           //跳转页面
           Taro.navigateTo({
-            url:'/pages/cameraPerson/showPhoto'
+            url: '/pages/cameraPerson/showPhoto'
           })
         })
       }
@@ -50,7 +50,7 @@ export default class extends Component{
 
 
   render() {
-    return(
+    return (
       <Camera className='camera-cls' devicePosition='back'>
         <CoverView className='main-tiips'>对准人形</CoverView>
         <CoverImage className='verifycode-cover' src={rx} />

@@ -1,15 +1,19 @@
 import Taro, { Component } from '@tarojs/taro';
 import { View, ScrollView } from '@tarojs/components';
 import './scrollTop2.less';
-export default class  extends Component{
- config={
+import { connect } from '@tarojs/redux';
+@connect(({ acl }) => ({
+  acl
+}))
+export default class extends Component {
+  config = {
 
   };
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
-      topNum:0,
-      cangotop:true
+      topNum: 0,
+      cangotop: true
     }
   };
 
@@ -23,31 +27,31 @@ export default class  extends Component{
   };
 
   //滚动条滚动式触发
-  scrolltoTop(e){
-    if(e.detail.scrollTop > 100){
+  scrolltoTop(e) {
+    if (e.detail.scrollTop > 100) {
       this.setState({
-        cangotop:false,
+        cangotop: false,
       })
-    }else{
+    } else {
       this.setState({
-        cangotop:true
+        cangotop: true
       });
     }
 
     //Taro的数值无变化导致不会重新渲染，这样回到顶部无效果，因此在此做数值改变，使其重新渲染
     this.setState({
-      topNum:-1
+      topNum: -1
     });
   };
   //滚动到顶部
-  goTop(){
+  goTop() {
     this.setState({
-      topNum:0
+      topNum: 0
     });
   }
 
   render() {
-    return(
+    return (
       <View>
         <ScrollView scrollY style='height:700px;' scrollTop={this.state.topNum} onScroll={this.scrolltoTop}>
           <View className='scroll-view1'>top2</View>
