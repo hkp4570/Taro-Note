@@ -1,7 +1,7 @@
 import Taro, { Component } from '@tarojs/taro';
 import { Provider } from '@tarojs/redux';
 import '@tarojs/async-await';
-import models from './models';
+import models from './models/index';
 import dva from './dva';
 
 import './app.less'
@@ -21,11 +21,22 @@ const dvaApp = dva.createApp({
 });
 const store = dvaApp.getStore();
 
+//初始化云数据
+Taro.cloud.init({
+  env:'test-5f3x2'
+})
+
 
 class App extends Component {
   dispatch = dvaApp.dispatch;
   config = {
     pages: [
+      'pages/kuaidi/kuaidi',
+      'pages/cloudTV/home',
+      'pages/cloudTV/channelList',
+      'pages/cloudDemo/cloudDemo',
+      'pages/app/app',
+      'pages/canvasDemo/canvasDemo',
       'pages/scrollTop/scrollTop2',
       'pages/imageNews/imageNews',
       'pages/cameraPerson/cameraPerson',
@@ -43,7 +54,6 @@ class App extends Component {
       'pages/nav/nav3',
       'pages/interactive/interactive',
       'pages/animation/animation',
-      'pages/app/app',
       'pages/file/file',
       'pages/systemInfo/systemInfo',
       'pages/userCaptureScreen/userCaptureScreen',

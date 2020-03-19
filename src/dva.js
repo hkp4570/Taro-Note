@@ -6,6 +6,7 @@ let store;
 let dispatch;
 
 function createApp(opt) {
+  console.log(opt.models);
   opt.onAction = [
     //
     //createLogger()
